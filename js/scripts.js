@@ -53,8 +53,11 @@ $(document).ready(function(){
        console.log(pizza)
     $("#output").html("<h4>Your order:</h4>" +  "<hr class='my-4'></hr>" + "<br>" +  "Size:" + " " + $("#size option:selected").text() + "<br>" + "Toppings:" + pizza.toppings.join("") + "<br>"  + "</ul>" + "<br>" + "Total cost:" + "$" + pizza.cost) 
     
+    if (pizza.toppings.includes("<li>pepperoni --$2")){
+        $(".pizza-crust").addClass("pizza-crust2")
+    }
     $("#output").show();
-    $("#pizza-crust").show()
+    $(".pizza-crust").show()
     $("#container-show").show()
 });
 });
