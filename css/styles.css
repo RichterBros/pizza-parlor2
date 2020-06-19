@@ -8,15 +8,14 @@
     
 }
 
-#pizza-pic{
-background-image: url('../img/crust_ht_NoFinish.webp');
-background-color: brown;
-float: right;
-height: 100px;
-width: 100px;
+#pizza-crust{
 
+    display: none;  
+}
 
+#container-show{
 
+    display: none;  
 }
 
 .container{
@@ -26,3 +25,7 @@ border-style: dashed;
     padding: 25px;
     margin-top: 25px;
 }
+
+
+
+

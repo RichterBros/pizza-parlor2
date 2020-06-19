@@ -54,7 +54,7 @@ $(document).ready(function(){
     $("#output").html("<h4>Your order:</h4>" +  "<hr class='my-4'></hr>" + "<br>" +  "Size:" + " " + $("#size option:selected").text() + "<br>" + "Toppings:" + pizza.toppings.join("") + "<br>"  + "</ul>" + "<br>" + "Total cost:" + "$" + pizza.cost) 
     
     $("#output").show();
-    
-
+    $("#pizza-crust").show()
+    $("#container-show").show()
 });
 });
