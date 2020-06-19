@@ -51,9 +51,10 @@ $(document).ready(function(){
        console.log(pizza.size)
        console.log(pizza.price(pizza))
        console.log(pizza)
-    $("#output").html("Your order:" + "<br>" +  "Size:" + $("#size option:selected").text() + "<br>" + "Toppings:" + "<br>"  + "</ul>" + "<br>" + "Total cost:" + "$" + pizza.cost) 
+    $("#output").html("<h4>Your order:</h4>" +  "<hr class='my-4'></hr>" +  "<br>" +  "Size:" + " " + $("#size option:selected").text() + "<br>" + "Toppings:" + pizza.toppings.join("") + "<br>"  + "</ul>" + "<br>" + "Total cost:" + "$" + pizza.cost) 
+    
     $("#output").show();
-    $("#price").html(pizza.toppings)
+    
 
 });
 });
