@@ -14,10 +14,10 @@
         <div class="form-group" id="form-group1">
           <label for="sel1">Choose a size!</label>
           <select class="form-control" id="size" data-validation="required">
-            <option required> -- select an option -- </option>
-            <option value="1">small</option>
-            <option value="2">medium</option>
-            <option value="3">large</option>
+            <option required> -- size -- </option>
+            <option value="1">small --$10</option>
+            <option value="2">medium --$15</option>
+            <option value="3">large --$20</option>
           </select>
         
           
@@ -25,18 +25,28 @@
       </form>
       
       <div id= "toppings">
-        <input type="checkbox" id="pepperoni" name="pepperoni" value="pepperoni">
-        <label for="pepperoni"> pepperoni</label><br>
-        <input type="checkbox" id="onions" name="onions" value="onions">
-        <label for="onions"> onions </label><br>
-        <input type="checkbox" id="green-peppers" name="green-peppers" value="green-peppers">
-        <label for="green-peppers"> green peppers</label><br>
+        <input type="checkbox" id="pepperoni" name="pepperoni" value="pepperoni --$2">
+        <label for="pepperoni"> pepperoni --$2</label><br>
+        <input type="checkbox" id="onions" name="onions" value="onions --$2">
+        <label for="onions"> onions --$2 </label><br>
+        <input type="checkbox" id="green-peppers" name="green-peppers" value="green-peppers --$2">
+        <label for="green-peppers"> green peppers --$2</label><br>
       </div>
       
       <button type="button" class="btn btn-primary" id="show-order">show order</button>
       
-      
-      <div id="output"></div>        
+      <div class="container">
+        <div class="row">
+          <div class="col-sm" id="output">
+           
+          </div>
+          <div class="col-sm">
+            <img src="img\crust_ht_NoFinish.webp" alt="pizza" width="500" height="500">
+          </div>
+        
+        </div>
+      </div>
+              
       
     </div>
 </body>

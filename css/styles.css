@@ -1,8 +1,28 @@
 #output{
     display: none;
-    border-style: dashed;
+    
+    margin-top: 25px;
+    
+    padding: 25px;
+    
+    
+}
+
+#pizza-pic{
+background-image: url('../img/crust_ht_NoFinish.webp');
+background-color: brown;
+float: right;
+height: 100px;
+width: 100px;
+
+
+
+}
+
+.container{
+border-style: dashed;
     border-width: 1px;
     border-radius: 10px;
-    margin-top: 25px;
     padding: 25px;
+    margin-top: 25px;
 }
