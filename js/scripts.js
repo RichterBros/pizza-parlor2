@@ -26,14 +26,8 @@ return this.cost
 }
 
 let pizza = new Pizza
-// Pizza.prototype.toppings = function(){
-    
-//     this.toppings = [];
-//     $('#toppings input[type="checkbox"]:checked').each(function(){
-//       this.toppings.push($(this).val());
-//     });
-// }
-    console.log(pizza.toppings)
+
+console.log(pizza.toppings)
 
 $(document).ready(function(){
     
@@ -41,15 +35,15 @@ $(document).ready(function(){
 
    
     let pizza = new Pizza()
-    //pizza.price(pizza)
+    
   
     
     $("#show-order").click(function () {
         $('#toppings input[type="checkbox"]:checked').each(function(){
-            pizza.toppings.push($(this).val());
+            pizza.toppings.push("<li>" + $(this).val());
           });
   
-       //pizza.cost = 55
+      
        console.log(pizza.toppings)
        
        pizza.size = parseInt($("#size").val())
@@ -57,7 +51,9 @@ $(document).ready(function(){
        console.log(pizza.size)
        console.log(pizza.price(pizza))
        console.log(pizza)
-    $("#output").html("Your order:" + "<br>" +  $("#size option:selected").text() + "<br>" + pizza.toppings)
+    $("#output").html("Your order:" + "<br>" +  "Size:" + $("#size option:selected").text() + "<br>" + "Toppings:" + "<br>"  + "</ul>" + "<br>" + "Total cost:" + "$" + pizza.cost) 
     $("#output").show();
-  });
+    $("#price").html(pizza.toppings)
+
+});
 });
