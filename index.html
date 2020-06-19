@@ -12,17 +12,29 @@
     
       <form id="first-form">
         <div class="form-group" id="form-group1">
-          <label for="sel1"></label>
+          <label for="sel1">Choose a size!</label>
           <select class="form-control" id="size" data-validation="required">
             <option required> -- select an option -- </option>
             <option value="1">small</option>
             <option value="2">medium</option>
             <option value="3">large</option>
           </select>
+        
+          
         </div>
       </form>
-  </div>
-  <button type="button" class="btn btn-primary" id="place-order">place order</button>
+      
+      <div id="toppings">
+        <input type="checkbox" id="pepperoni" name="pepperoni" value="pepperoni">
+        <label for="pepperoni"> pepperoni</label><br>
+        <input type="checkbox" id="onions" name="onions" value="onions">
+        <label for="onions"> onions </label><br>
+        <input type="checkbox" id="green-peppers" name="green-peppers" value="green-peppers">
+        <label for="green-peppers"> green peppers</label><br>
+      </div>
+    </div>
+  
+    <button type="button" class="btn btn-primary" id="show-order">show order</button>
   
   
   <p id="output"></p>        
