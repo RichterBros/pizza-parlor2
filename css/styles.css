@@ -26,6 +26,16 @@ height: 200px;
 width: 200px;
 
 }
+
+.pizza-crust3{
+    background-image: url("../img/pepperoniOnionPizza.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: none;  
+height: 200px;
+width: 200px;
+
+}
 #container-show{
 
     display: none;  
