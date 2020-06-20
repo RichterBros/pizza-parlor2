@@ -42,7 +42,7 @@ A website for a pizza company where a user can choose one or more individual top
 
 ##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;View Directly in your Browser:
 
-* Navigate to {GH Pages URL} in your web browser.
+* Navigate to https://richterbros.github.io/pizza-parlor2/ in your web browser.
 
 ## Known Bugs
 
