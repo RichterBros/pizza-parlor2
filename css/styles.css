@@ -8,16 +8,14 @@
     
 }
 
-.pizza-crust{
-    background-image: url("../img/cheesePizza.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: none;  
-height: 200px;
-width: 200px;
+.pizza-cheese{
+
+margin-top: 50px;
+
 }
 
-.pizza-crust2{
+
+/*.pizza-pepperoni{
     background-image: url("../img/pepperoniPizza.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -27,7 +25,7 @@ width: 200px;
 
 }
 
-.pizza-crust3{
+.pizza-pepperoni-onion{
     background-image: url("../img/pepperoniOnionPizza.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -35,7 +33,7 @@ width: 200px;
 height: 200px;
 width: 200px;
 
-}
+}*/
 #container-show{
 
     display: none;  
@@ -46,6 +44,11 @@ border-style: dashed;
     border-width: 1px;
     border-radius: 10px;
     padding: 25px;
+    margin-top: 25px;
+}
+
+#warning{
+    color: crimson;
     margin-top: 25px;
 }
 
