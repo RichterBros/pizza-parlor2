@@ -44,11 +44,39 @@ $(document).ready(function () {
             pizza.price(pizza)
             
             $("#output").append("<hr class='my-4'></hr>" + "<h4>Your order: " + "#" + pizza.orderCount + "</h4>" + "<hr class='my-4'></hr>" + "<br>" + "Size:" + " " + $("#size option:selected").text() + "<br>" + "Toppings:" + pizza.toppings.join("") + "<br>" + "</ul>" + "<br>" + "Total cost:" + "$" + pizza.cost)
-
-            if (pizza.toppings.includes("<li>pepperoni --$2")) {
-                $(".pizza-cheese").append('<img src="/img/pepperoniPizza.png" alt="pep" width="200" height="200"><br><br><br><br>')
-            }
             
+            function toppingsDisplay(){
+            if (pizza.toppings.includes("<li>pepperoni --$2") && pizza.toppings.includes("<li>green-peppers --$2") && pizza.toppings.includes("<li>onions --$2")  ) {
+                return  $(".pizza-cheese").append('<img src="/img/pepperoni-green-peppers-onions.png" alt="pep" width="200" height="200"><br>')
+           
+                    }else if (pizza.toppings.includes("<li>pepperoni --$2") && pizza.toppings.includes("<li>onions --$2")  ) {
+                        return $(".pizza-cheese").append('<img src="/img/pepperoniOnionPizza.png" alt="pepOn" width="200" height="200"><br>')
+                    
+                    }else if (pizza.toppings.includes("<li>pepperoni --$2") && pizza.toppings.includes("<li>green-peppers --$2")) {
+                        return  $(".pizza-cheese").append('<img src="/img/pepperoni-green-peppers.png" alt="pep" width="200" height="200"><br>')
+                    
+                    }else if (pizza.toppings.includes("<li>onions --$2") && pizza.toppings.includes("<li>green-peppers --$2")) {
+                        return  $(".pizza-cheese").append('<img src="/img/green-peppers-onions.png" alt="pep" width="200" height="200"><br>')
+                    
+                    }else if (pizza.toppings.includes("<li>onions --$2") && pizza.toppings.includes("<li>green-peppers --$2")) {
+                        return  $(".pizza-cheese").append('<img src="/img/green-peppers-onions.png" alt="pep" width="200" height="200"><br>')
+                    
+                    }else if (pizza.toppings.includes("<li>pepperoni --$2")) {
+                        return  $(".pizza-cheese").append('<img src="/img/pepperoniPizza.png" alt="pep" width="200" height="200"><br>')
+                    
+                    }else if (pizza.toppings.includes("<li>green-peppers --$2")) {
+                        return  $(".pizza-cheese").append('<img src="/img/green-peppers.png" alt="pep" width="200" height="200"><br>')
+                    
+                    }else if (pizza.toppings.includes("<li>onions --$2")) {
+                        return  $(".pizza-cheese").append('<img src="/img/onions.png" alt="pep" width="200" height="200"><br>')
+                    
+                    
+                    }else{
+                        return  $(".pizza-cheese").append('<img src="/img/cheesePizza.png" alt="pep" width="200" height="200"><br>')
+                }
+            }
+            toppingsDisplay()
+            $("container-show").html('<div>"saddsfadfs"</div>')
             $(".pizza-cheese").show()
             $("#container-show").show()
             $("#output").show();
