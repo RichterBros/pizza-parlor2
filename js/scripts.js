@@ -22,8 +22,6 @@ Pizza.prototype.price = function () {
     }
 }
 
-//let pizza = new Pizza
-
 $(document).ready(function () {
     let pizza = new Pizza()
 
