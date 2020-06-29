@@ -1,9 +1,7 @@
-
-function Pizza(size, toppings, cost, totalCost) {
+function Pizza(size, toppings, cost) {
     this.toppings = toppings;
     this.size = size;
     this.cost = cost;
-    this.totalCost = totalCost;
 }
 
 function Count(clickCount) {
@@ -31,9 +29,7 @@ Pizza.prototype.price = function () {
 }
 
 $(document).ready(function () {
-    let cost = 0
     let clickCount = 0
-    let totalCost = cost
     let count = new Count(clickCount)
     $("#show-order").click(function () {
         count.click()
@@ -45,12 +41,12 @@ $(document).ready(function () {
             $("#warning").text("Please choose a size!")
         } else {
             $("#warning").text("")
-                let toppings = []
+            let toppings = []
             $('#toppings input[type="checkbox"]:checked').each(function () {
                 toppings.push("<li>" + $(this).val());
             });
 
-            let pizza = new Pizza(size, toppings, cost, totalCost, orderCount)
+            let pizza = new Pizza(size, toppings, cost, orderCount)
             cost = pizza.price()
 
             $("#output").append("<hr class='my-4'></hr>" + "<h4>Your order: " + "#" + count.clickCount + toppingsDisplay().val() + "</h4>" + "<hr class='my-4'></hr>" + "<br>" + "Size:" + " " + $("#size option:selected").text() + "<br>" + "Toppings:" + toppings.join("") + "<br>" + "</ul>" + "<br>" + "Total:" + " " + "$" + cost + "<br>")
